@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- video source -->
+	<!-- https://youtu.be/JiuD68b4tzo -->
+</head>
+<body>
+<section>
+		<header>
+		<a href="#" class="logo">Climate Action</a>
+		<div class="toggle"></div>
+	  </header>
+	  <img src="img/bg.jpg" alt="background" class="bg">
+	  <img src="img/bird2.png" alt="Mocking Bird" class="bird">
+	  <div class="content">
+	  	<h2>You Could Save The <span>World</span></h2>
+	  	<p>Right now our world is experiencing several moments of profound change from revolutions to economic crisis but the most defining moment of earth's history has arrived. The climate crisis about to impact the  world in a way unlike any we have experienced in centuries, you can make a difference and be remembered for saving the world. Be the change this world needs. </p>
+	  	<a href="#">Join Us</a>
+	  </div>
+	  <ul class="sci">
+	  	<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+	  	<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+	  	<li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+	  </ul>
+	  
+</section>
+
+
+
+
+<script type="text/javascript">
+	document.addEventListener("mousemove",e =>{
+		let bg = document.querySelector(".bg");
+		let bird = document.querySelector(".bird");
+		let content = document.querySelector(".content");
+		let bgParam = 100 + e.pageX/100 + "%";
+		let contentParam = 100 + e.pageX/2 + "px";
+		bg.style.width = bgParam;
+		bg.style.height = bgParam;
+		bird.style.right = contentParam;
+		content.style.left = contentParam;
+	});
+
+</script>
+</body>
+</html>
